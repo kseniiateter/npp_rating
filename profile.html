@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" href="profile.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700&display=swap" rel="stylesheet">
+  <title>Профіль</title>
+  <html>
+    <head><script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+            
+    </head>
+    <head><style>
+    li, a, button {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 500;
+      font-size: 18px;
+      color: #2B2B48;
+      text-decoration: none;
+    
+    }
+    .logo {
+      font-size: 48px;
+      cursor: pointer;
+    }
+    
+    header {
+      height: 104px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 5%;
+      border: 3px solid;
+      border-bottom-color: rgba(57, 57, 57, 0.07);
+      border-top-color: rgba(57, 57, 57, 0.07);
+      border-right-color: #FFFFFF;
+      border-left-color: #FFFFFF;
+    }
+    .nav_links {
+      list-style: none;
+    
+    }
+    .nav_links li {
+      display: inline-block;
+      padding: 0px 20px;
+    }
+    .nav_links li a {
+      transition: all 0.3s ease 0s;
+    }
+    .nav_links li a:hover {
+      color: #C3A898;
+    }
+    
+    .log {
+      padding: 3px 25px;
+      background-color: rgba(57, 57, 57, 0.07);
+      border: none;
+      cursor: pointer;
+      transition: all 0.3s ease 0s;
+    }
+    .log:hover {
+      background-color: rgba(195, 168, 152, 0.5);
+    }</style></head>
+  <body>
+    <header>
+      
+      <div class="logo">nulp.rating</div>
+      <nav >	
+          <ul class="nav_links">
+          <li><a href="about.html">профіль</a></li>
+          <li><a href="#">про систему</a></li>
+          <li><a href="#">новини</a></li>
+          <li><a href="rating.html">рейтинг</a></li>
+          <li><a class="login" href="#"><button class="log">вийти</button></a>	</li>			
+        </ul>
+        <div class="burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+       </div>
+      </nav>
+      
+    </header>
+  </body>
+  </html>
+
+</head>
+<body>
+
+  <div class="main-content">
+    <!-- Top navbar -->
+    <nav class="navbar navbar-top navbar-expand-md navbar-dark" id="navbar-main">
+      <div class="container-fluid">
+        <!-- Brand -->
+       
+        <!-- Form -->
+        <form class="navbar-search navbar-search-dark form-inline mr-3 d-none d-md-flex ml-lg-auto">
+          <div class="form-group mb-0">
+        
+      
+               
+          </div>
+        </form>
+        <!-- User -->
+        <ul class="navbar-nav align-items-center d-none d-md-flex">
+          <li class="nav-item dropdown">
+            <a class="nav-link pr-0" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <div class="media align-items-center">
+  
+                <div class="media-body ml-2 d-none d-lg-block">
+                 
+                </div>
+              </div>
+            </a>
+            <div class="dropdown-menu dropdown-menu-arrow dropdown-menu-right">
+              <div class=" dropdown-header noti-title">
+                <h6 class="text-overflow m-0">Welcome!</h6>
+              </div>
+              <a href="../examples/profile.html" class="dropdown-item">
+                <i class="ni ni-single-02"></i>
+                <span>My profile</span>
+              </a>
+              <a href="../examples/profile.html" class="dropdown-item">
+                <i class="ni ni-settings-gear-65"></i>
+                <span>Settings</span>
+              </a>
+              <a href="../examples/profile.html" class="dropdown-item">
+                <i class="ni ni-calendar-grid-58"></i>
+                <span>Activity</span>
+              </a>
+              <a href="../examples/profile.html" class="dropdown-item">
+                <i class="ni ni-support-16"></i>
+                <span>Support</span>
+              </a>
+              <div class="dropdown-divider"></div>
+              <a href="#!" class="dropdown-item">
+                <i class="ni ni-user-run"></i>
+                <span>Logout</span>
+              </a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- Header -->
+    <div class="header pb-8 pt-5 pt-lg-8 d-flex align-items-center" style="min-height: 400px; background-size: cover; background-position: center top;">
+      <!-- Mask -->
+     
+      <!-- Header container -->
+      <div class="container-fluid d-flex align-items-center">
+        <div class="row">
+          <div class="col-lg-7 col-md-10">
+            <h1 class="display-2 text-white">Привіт, Наталія</h1>
+            <p class="text-white mt-0 mb-5">Це твоя сторінка, на якій ти можеш побачити свій прогрес</p>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Page content -->
+    <div class="container-fluid mt--7">
+      <div class="row">
+        <div class="col-xl-4 order-xl-2 mb-5 mb-xl-0">
+          <div class="card card-profile shadow">
+            <div class="row justify-content-center">
+              <div class="col-lg-3 order-lg-2">
+                <div class="card-profile-image">
+                  <a href="#">
+                    <img src="assets/christina-wocintechchat-com-0Zx1bDv5BNY-unsplash.jpg" class="rounded-circle">
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="card-header text-center border-0 pt-8 pt-md-4 pb-0 pb-md-4">
+              <div class="d-flex justify-content-between">
+                
+              </div>
+            </div>
+            <div class="card-body pt-0 pt-md-4">
+              <div class="row">
+                <div class="col">
+                  <div class="card-profile-stats d-flex justify-content-center mt-md-5">
+                    <div>
+                      <span class="heading">4</span>
+                      <span class="description">Курси</span>
+                    </div>
+                    <div>
+                      <span class="heading">3</span>
+                      <span class="description">Роки з НУ "ЛП"</span>
+                    </div>
+                    <div>
+                      <span class="heading">5</span>
+                      <span class="description">Наукових робіт</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="text-center">
+                <h3>
+                  Наталія Шевченко<span class="font-weight-light">, 27</span>
+                </h3>
+                <div class="h5 font-weight-300">
+                  <i class="ni location_pin mr-2"></i>Львів, Україна
+                </div>
+                <div class="h5 mt-4">
+                  <i class="ni business_briefcase-24 mr-2"></i>Старший викладач кафедри ІСМ
+                </div>
+                <div>
+                  <i class="ni education_hat mr-2"></i>ІКНІ
+                </div>
+                <hr class="my-4">
+                <h1>589</h1>
+                <p>Загальний рейтинг</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-8 order-xl-1">
+          <div class="card bg-secondary shadow">
+            <div class="card-header bg-white border-0">
+              <div class="row align-items-center">
+                <div class="col-8">
+                  <h3 class="mb-0">Мій профіль</h3>
+                </div>
+                <div class="col-4 text-right">
+                 
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <form>
+                <h6 class="heading-small text-muted mb-4">Інформація</h6>
+                <div class="pl-lg-4">
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <div class="form-group focused">
+                        <label class="form-control-label" for="input-username">Ім'я</label>
+                        <input type="text" id="input-username" class="form-control form-control-alternative" placeholder="Username" value="Наталія">
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="form-group">
+                        <label class="form-control-label" for="input-email">Емейл</label>
+                        <input type="email" id="input-email" class="form-control form-control-alternative" placeholder="nataliia.o.shevchenko@lpnu.ua">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <div class="form-group focused">
+                        <label class="form-control-label" for="input-first-name">Прізвище</label>
+                        <input type="text" id="input-first-name" class="form-control form-control-alternative" placeholder="First name" value="Шевченко">
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="form-group focused">
+                        <label class="form-control-label" for="input-last-name">По батькові</label>
+                        <input type="text" id="input-last-name" class="form-control form-control-alternative" placeholder="Last name" value="Олександрівна">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <hr class="my-4">
+                <!-- Address -->
+                <h6 class="heading-small text-muted mb-4">Рейтинг</h6>
+                <div class="pl-lg-4">
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="form-group focused">
+                       
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-lg-4">
+                      <div class="form-group focused">
+                        <label class="form-control-label" for="input-city">Навчально-методична робота</label>
+                        <input type="text" id="input-city" class="form-control form-control-alternative" placeholder="City" value="324">
+                      </div>
+                    </div>
+                    <div class="col-lg-4">
+                      <div class="form-group focused">
+                        <label class="form-control-label" for="input-country">Науково-інноваційна робота</label>
+                        <input type="text" id="input-country" class="form-control form-control-alternative" placeholder="Country" value="200">
+                      </div>
+                    </div>
+                    <div class="col-lg-4">
+                      <div class="form-group">
+                        <label class="form-control-label" for="input-country">Організаційно-виховна робота</label>
+                        <input type="number" id="input-postal-code" class="form-control form-control-alternative" placeholder="65">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <hr class="my-4">
+                <!-- Description -->
+                <h6 class="heading-small text-muted mb-4">Про мене</h6>
+                <div class="pl-lg-4">
+                  <div class="form-group focused">
+                    <label>Про мене</label>
+                    <textarea rows="4" class="form-control form-control-alternative" placeholder="A few words about you ...">Люблю сучасний підхід до начання)</textarea>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+ 
+</body>

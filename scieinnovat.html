@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="orgedu.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>Науково-інноваційна робота</title>
+</head>
+<body>
+    <header>
+		
+		<div class="logo">nulp.rating</div>
+		<nav >	
+				<ul class="nav_links">
+				<li><a href="profile.html">профіль</a></li>
+				<li><a href="#">про систему</a></li>
+				<li><a href="#">новини</a></li>
+				<li><a href="rating.html">рейтинг</a></li>
+				<li><a class="login" href="#"><button class="log">вийти</button></a>	</li>			
+			</ul>
+			<div class="burger">
+			<div class="line1"></div>
+			<div class="line2"></div>
+			<div class="line3"></div>
+ 		</div>
+		</nav>
+		
+	</header>
+
+    <html>
+        <head><script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+            
+        </head>
+        <head><style>
+            .txtCal  {
+        width: 60px;
+        padding-left: 20px;
+       
+        }
+        th{
+            padding-bottom: 20px;
+        }
+       td{
+           height: 60px;
+           
+           margin-left: 20px;
+        }
+        span.col2 {
+            padding-left: 73px;
+        }
+        span.ots{
+            padding-left: 500px;
+            margin-left: 100px;
+        }
+       
+        td.tdtext{
+            padding-left: 20px;
+            width: 750px;
+        }
+        span.total{
+            padding-left: 180px;
+        }
+        span.prymitka{
+            padding-left: 60px;
+        }
+        span.headsp1{
+            font-weight: 600;
+        }
+        img {
+            max-width:100%;
+            max-height:30%;
+        }
+        .heading{
+            text-align: center;
+            font-size: 48px;
+            padding-bottom: 60px;
+        }
+        </style></head>
+        <body>
+            <div class="image1"><img src="assets/igor-son-FV_PxCqgtwc-unsplash (4).jpg" alt=""></div>
+            <div class="heading">Науково-інноваційна робота</div>
+        <table id="myTable">
+        <tr>   <th width="50">Вид роботи </th>
+            <th class="max">max</th>
+            <th >Бали</th>
+            <th >Примітка</th>
+        </tr>
+        <tr>
+            <td class="tdtext"><span class="headsp1">Отримання вченого звання:</span></td>
+            <td ><span class="col2"></span></td>
+            <td ></td>
+            <td class="tdtext"><span class="prymitka"></span></td>
+        </tr>    
+        <tr>
+            <td class="tdtext"><span class="headsp">– професора;</span></td>
+            <td ><span class="col2">150</span></td>
+            <td><input type="text" class='txtCal' /></td>
+            <td class="tdtext"><span class="prymitka"></span></td>
+        </tr>  
+        <tr>
+            <td class="tdtext"><span class="headsp">– доцента, ст. наукового співробітника</span></td>
+            <td ><span class="col2">100</span></td>
+            <td><input type="text" class='txtCal' /></td>
+            <td class="tdtext"><span class="prymitka"></span></td>
+        </tr>  
+        <tr>
+            <td class="tdtext"><span class="headsp1">Підготовлення наукових кадрів:</span></td>
+            <td ><span class="col2"></span></td>
+            <td></td>
+            <td class="tdtext"><span class="prymitka">щорічно протягом нормативного терміну навчання за даними відділу аспірантури</span></td>
+        </tr>  
+        <tr>
+            <td class="tdtext"> <span class="headsp">- керівництво здобувачем, аспірантом/іноземним </span></td>
+            <td ><span class="col2">100</span></td>
+            <td><input type="text" class='txtCal' /></td>
+            <td class="tdtext"><span class="prymitka"></span></td>
+        </tr>
+        <tr>
+            
+            <td ><span class="col2"></span></td>
+            <td><b><span id="total_sum_value" class="total"></span></b></td>
+        </tr>
+        </table>
+        
+       
+        <script>
+        $(document).ready(function(){
+        
+            
+        $("#myTable").on('input', '.txtCal', function () {
+               var calculated_total_sum = 0;
+             
+               $("#myTable .txtCal").each(function () {
+                   var get_textbox_value = $(this).val();
+                   if ($.isNumeric(get_textbox_value)) {
+                      calculated_total_sum += parseFloat(get_textbox_value);
+                      }                  
+                    });
+                      $("#total_sum_value").html(calculated_total_sum);
+               });
+        
+        });
+        
+        </script>
+
+        </body>
+        </html>
+
+</body>
+</html>
+
+
+</body>
+</html>
